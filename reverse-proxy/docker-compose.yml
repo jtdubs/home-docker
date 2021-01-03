@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  traefik:
+    container_name: "traefik"
+    image: traefik:alpine
+    volumes:
+      - ./traefik.toml:/etc/traefik/traefik.toml
+      - ./https/:/etc/traefik/https/
+      - /var/run/docker.sock:/var/run/docker.sock
+      - traefik-tmp:/tmp
+    ports:
+      - "80:80/tcp"
+      - "443:443/tcp"
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=8080"
+      - "traefik.frontend.rule=Host:traefik.services.dubs.zone"
+    networks:
+      - web
+
+volumes:
+  traefik-tmp:
+
+networks:
+  web:
+    external: true

@@ -1,0 +1,5 @@
+*.log
+*.log.*
+*.db
+pihole-etc-dnsmasq.d/
+pihole-etc-pihole/

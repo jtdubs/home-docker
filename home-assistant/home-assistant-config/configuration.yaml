@@ -1,0 +1,107 @@
+homeassistant:
+config:
+cloud:
+conversation:
+discovery:
+history:
+sun:
+system_health:
+mobile_app:
+
+automation: !include automations.yaml
+
+light:
+  - platform: group
+    name: Master Bathroom Lights
+    entities:
+      - light.master_bathroom_vanity
+      - light.master_bathroom_recessed
+      - light.master_bathroom_decorative
+
+cover:
+  - platform: myq
+    username: 'jtdubs@gmail.com'
+    password: !secret myq_password
+    type: chamberlain
+
+ecobee:
+  api_key: LgAU3bfvc8ah0F9uKBXFQitDmGmeN77v
+
+frontend:
+  javascript_version: latest
+
+group:
+  kitchen_only_entities:
+    name: Kitchen
+    entities:
+      - switch.kitchen_overhead_light
+      - switch.kitchen_sink_light
+  garage_exterior_lights:
+    name: Garage Exterior
+    entities:
+      - switch.garage_exterior_small_light
+      - switch.garage_exterior_large_light
+
+http:
+  server_host: 0.0.0.0
+  server_port: 8123
+  base_url: http://homeassistant.services.dubs.zone/
+
+logbook:
+  exclude:
+    domains:
+      - device_tracker
+      - media_player
+      - sun
+      - updater
+      - weblink
+      - zwave
+
+logger:
+  default: warn
+  logs:
+    homeassistant.setup: info
+    homeassistant.loader: info
+    homeassistant.core: info
+    homeassistant.components.zwave: info
+    homeassistant.components.automation: debug
+    homeassistant.components.cover: debug
+
+notify:
+  - platform: html5
+    gcm_api_key: 'AAAA4BsGrqk:APA91bEU5E0ccA25FHSpydftcsMYqx4OetAmzw9OOpGyC0aqFxG6AhSLOYygKgu0iRVQaCCaoXQLSX-CpwUfkPt9M7PWHDoS4E6k3ZDuzqxWOPejt7X5_SuAsXZsrcVqWXZI9d4q7G07'
+    gcm_sender_id: '962526097065'
+
+recorder:
+  purge_interval: 1
+  purge_keep_days: 30
+  exclude:
+    domains:
+      - device_tracker
+      - media_player
+      - sun
+      - updater
+      - weblink
+      - zwave
+
+input_boolean:
+  christmas_lights_up:
+    name: Christmas Lights Up
+    icon: mdi:robot
+  christmas_tree_up:
+    name: Christmas Tree Up
+    icon: mdi:robot
+  halloween_lights_up:
+    name: Halloween Lights Up
+    icon: mdi:robot
+  automatic_art_room_closet_lights:
+    name: Automatic Art Room Closet Lighting
+    initial: on
+    icon: mdi:robot
+
+tts:
+  - platform: google_translate
+    service_name: google_say
+
+updater:
+  include_used_components: true

@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  jellyfin:
+    container_name: "jellyfin"
+    hostname: "river"
+    image: jellyfin/jellyfin:latest
+    volumes:
+      - /export/share:/media
+      - jellyfin-cache:/cache
+      - jellyfin-config:/config
+    ports:
+      - "8096:8096/tcp"
+      - "8920:8920/tcp"
+      - "1900:1900/udp"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=8096"
+      - "traefik.frontend.rule=Host:jellyfin.services.dubs.zone"
+    restart: unless-stopped
+    networks:
+      web:
+
+volumes:
+  jellyfin-cache:
+  jellyfin-config:
+
+networks:
+  web:
+    external: true

@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  webca:
+    image: division42llc/dotnet-webca
+    restart: unless-stopped
+    volumes:
+      - webca-data:/var/localCA/
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=8080"
+      - "traefik.frontend.rule=Host:ca.services.dubs.zone"
+
+volumes:
+  webca-data:
+
+networks:
+  web:
+    external: true

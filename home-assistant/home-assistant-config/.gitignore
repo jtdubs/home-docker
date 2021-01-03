@@ -1,0 +1,17 @@
+.dump
+.cloud
+.storage
+secrets.yaml
+known_devices.yaml
+*.log
+*.xml
+*.db
+*.db-*
+*.conf
+*.sqlite
+*.txt
+*.swp
+.uuid
+.HA_VERSION
+.wink.conf
+tts/

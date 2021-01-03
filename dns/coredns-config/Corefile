@@ -1,0 +1,20 @@
+services.dubs.zone:53 {
+  file config/services.dubs.zone
+  log
+  errors
+  cache
+}
+
+dubs.zone:53 {
+  file config/dubs.zone
+  log
+  errors
+  cache
+}
+
+.:53 {
+  forward . 10.1.0.4
+  log
+  errors
+  cache
+}

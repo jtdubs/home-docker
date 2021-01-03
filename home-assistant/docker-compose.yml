@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  home-assistant:
+    container_name: home-assistant
+    image: homeassistant/home-assistant
+    volumes:
+      - ./home-assistant-config:/config
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/ttyUSB1:/dev/ttyUSB1
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=8123"
+      - "traefik.frontend.rule=Host:homeassistant.services.dubs.zone"
+    networks:
+      web:
+
+networks:
+  web:
+    external: true

@@ -1,0 +1,64 @@
+$TTL 60
+$ORIGIN dubs.zone.
+
+@ IN SOA river.dubs.zone jtdubs.river.dubs.zone (
+	2019070300
+        4H
+        1H
+        7D
+        4H
+)
+
+@ IN A 172.16.32.8
+
+isp-router		IN A 192.168.128.16
+
+udm			IN A 172.16.0.1
+gateway 		IN CNAME udm
+vpn			IN CNAME udm
+unifi			IN CNAME udm
+distribution-switch	IN A 172.16.0.8
+access-switch-office	IN A 172.16.0.16
+ap-art-room		IN A 172.16.0.24
+ap-living-room		IN A 172.16.0.25
+ap-office		IN A 172.16.0.26
+ap-anyas-room		IN A 172.16.0.27
+
+river			IN A 172.16.32.8
+ns			IN CNAME river
+
+tv-living-room		IN A 172.16.40.8
+soundbar-living-room	IN A 172.16.40.9
+scope			IN A 172.16.40.24
+cam			IN A 172.16.40.32
+
+thermostat-downstairs	IN A 172.16.41.8
+thermostat-upstairs	IN A 172.16.41.9
+printer			IN A 172.16.41.16
+google-home-living-room	IN A 172.16.41.24
+google-home-kitchen	IN A 172.16.41.25
+google-home-office	IN A 172.16.41.26
+google-home-bedroom	IN A 172.16.41.27
+google-home-art-room	IN A 172.16.41.28
+google-home-anyas-room	IN A 172.16.41.29
+oven			IN A 172.16.41.32
+garage-door		IN A 172.16.41.40
+chromecast-living-room	IN A 172.16.41.48
+chromecast-anyas-room	IN A 172.16.41.49
+octopi			IN A 172.16.41.64
+
+pc-living-room		IN A 172.16.48.8
+gargantua		IN A 172.16.48.9
+ocean			IN A 172.16.48.19
+
+justin-phone		IN A 172.16.49.16
+justin-tablet		IN A 172.16.49.17
+stream			IN A 172.16.49.18
+justin-laptop		IN CNAME stream
+leslie-phone		IN A 172.16.49.100
+leslie-laptop		IN A 172.16.49.26
+anya-phone		IN A 172.16.49.32
+anya-tablet		IN A 172.16.49.33
+anya-laptop		IN A 172.16.49.34
+
+work-laptop		IN A 172.16.64.8

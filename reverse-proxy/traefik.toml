@@ -1,0 +1,75 @@
+debug = true
+logLevel = "INFO"
+defaultEntryPoints = ["http", "https"]
+
+[api]
+dashboard = true
+
+[docker]
+domain = "services.dubs.zone"
+watch = true
+network = "web"
+exposedByDefault = false
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+
+  [entryPoints.https]
+  address = ":443"
+
+  [entryPoints.https.tls]
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/2039AF8BF043E6CF6B06D50C00A5F07CD0E90C1C.crt"
+    keyFile = "/etc/traefik/https/2039AF8BF043E6CF6B06D50C00A5F07CD0E90C1C.key"
+
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/7480CDF0413235FD96DCA02E47D837E584756A05.crt"
+    keyFile = "/etc/traefik/https/7480CDF0413235FD96DCA02E47D837E584756A05.key"
+
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/86FBFF10A3F51F19F00578E9BD7E5C91E40DB6CB.crt"
+    keyFile = "/etc/traefik/https/86FBFF10A3F51F19F00578E9BD7E5C91E40DB6CB.key"
+
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/943CFCB6517A94C4572A3899B7B1612FC222C1C3.crt"
+    keyFile = "/etc/traefik/https/943CFCB6517A94C4572A3899B7B1612FC222C1C3.key"
+
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/F7113EE15F47E12FA640DFE0058C6ECD5571E4DD.crt"
+    keyFile = "/etc/traefik/https/F7113EE15F47E12FA640DFE0058C6ECD5571E4DD.key"
+
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/3D38558FD60780A0A6249508E33EC1EE78CF6EB0.crt"
+    keyFile = "/etc/traefik/https/3D38558FD60780A0A6249508E33EC1EE78CF6EB0.key"
+
+    [[entryPoints.https.tls.certificates]]
+    certFile = "/etc/traefik/https/6D1D0EDF31E3AD71223C25AF16E7F2CBDE083198.crt"
+    keyFile = "/etc/traefik/https/6D1D0EDF31E3AD71223C25AF16E7F2CBDE083198.key"
+
+# [file]
+#   [frontends]
+#     [frontends.unifi]
+#     backend="unifi"
+#       [frontends.unifi.routes]
+#         [frontends.unifi.routes.unifi]
+#         rule = "Host:unifi.services.dubs.zone"
+#   
+#     [frontends.protect]
+#     backend="protect"
+#       [frontends.protect.routes]
+#         [frontends.protect.routes.protect]
+#         rule = "Host:protect.services.dubs.zone"
+#   
+#   [backends]
+#     [backends.unifi]
+#       [backends.unifi.servers]
+#         [backends.unifi.servers.cloudkey]
+#         url = "https://cloudkey.dubs.zone:8443/"
+#         weight = 1
+#   
+#     [backends.protect]
+#       [backends.protect.servers]
+#         [backends.protect.servers.cloudkey]
+#         url = "https://cloudkey.dubs.zone:7443/"
+#         weight = 1

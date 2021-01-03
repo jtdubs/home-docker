@@ -1,0 +1,6 @@
+*.log
+secrets.yaml
+*.db
+ecobee.conf
+OZW_Log.txt
+*.sqlite

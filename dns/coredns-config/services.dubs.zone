@@ -1,0 +1,16 @@
+$TTL 60
+$ORIGIN services.dubs.zone.
+
+@ IN SOA river.dubs.zone jtdubs.river.dubs.zone (
+	2019070300
+        4H
+        1H
+        7D
+        4H
+)
+
+;; @ IN A 192.168.2.16
+;; * IN A 192.168.2.16
+
+@ IN A 172.16.32.8
+* IN A 172.16.32.8
