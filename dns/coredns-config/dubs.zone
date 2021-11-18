@@ -49,6 +49,7 @@ octopi			IN A 172.16.41.64
 
 pc-living-room		IN A 172.16.48.8
 gargantua		IN A 172.16.48.9
+risc-dev		IN A 172.16.48.10
 ocean			IN A 172.16.48.19
 
 justin-phone		IN A 172.16.49.16

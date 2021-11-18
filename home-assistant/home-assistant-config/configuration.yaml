@@ -18,17 +18,10 @@ light:
       - light.master_bathroom_recessed
       - light.master_bathroom_decorative
 
-cover:
-  - platform: myq
-    username: 'jtdubs@gmail.com'
-    password: !secret myq_password
-    type: chamberlain
-
 ecobee:
   api_key: LgAU3bfvc8ah0F9uKBXFQitDmGmeN77v
 
 frontend:
-  javascript_version: latest
 
 group:
   kitchen_only_entities:
@@ -46,6 +39,9 @@ http:
   server_host: 0.0.0.0
   server_port: 8123
   base_url: http://homeassistant.services.dubs.zone/
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.0.2
 
 logbook:
   exclude:

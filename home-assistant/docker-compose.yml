@@ -3,13 +3,10 @@ version: "3"
 services:
   home-assistant:
     container_name: home-assistant
-    image: homeassistant/home-assistant
+    image: homeassistant/home-assistant:latest
     volumes:
       - ./home-assistant-config:/config
       - /etc/localtime:/etc/localtime:ro
-    devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
-      - /dev/ttyUSB1:/dev/ttyUSB1
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
@@ -17,6 +14,27 @@ services:
       - "traefik.frontend.rule=Host:homeassistant.services.dubs.zone"
     networks:
       web:
+  zwavejs2mqtt:
+    container_name: zwavejs2mqtt
+    image: zwavejs/zwavejs2mqtt:latest
+    restart: unless-stopped
+    tty: true
+    stop_signal: SIGINT
+    environment:
+      - SESSION_SECRET=mysupersecretkey
+    networks:
+      web:
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    volumes:
+      - ./zwave-config:/usr/src/app/store
+    ports:
+      - '8091:8091' # port for web interface
+      - '3000:3000' # port for Z-Wave JS websocket server
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=8091"
+      - "traefik.frontend.rule=Host:zwave.services.dubs.zone"
 
 networks:
   web:

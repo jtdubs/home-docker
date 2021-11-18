@@ -42,7 +42,7 @@ services:
 
   cloudflared:
     container_name: "cloudflared"
-    image: visibilityspots/cloudflared:amd64
+    image: visibilityspots/cloudflared:latest
     restart: unless-stopped
     networks:
       default:
