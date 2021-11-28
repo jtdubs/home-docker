@@ -10,30 +10,10 @@ mobile_app:
 
 automation: !include automations.yaml
 
-light:
-  - platform: group
-    name: Master Bathroom Lights
-    entities:
-      - light.master_bathroom_vanity
-      - light.master_bathroom_recessed
-      - light.master_bathroom_decorative
-
 ecobee:
   api_key: LgAU3bfvc8ah0F9uKBXFQitDmGmeN77v
 
 frontend:
-
-group:
-  kitchen_only_entities:
-    name: Kitchen
-    entities:
-      - switch.kitchen_overhead_light
-      - switch.kitchen_sink_light
-  garage_exterior_lights:
-    name: Garage Exterior
-    entities:
-      - switch.garage_exterior_small_light
-      - switch.garage_exterior_large_light
 
 http:
   server_host: 0.0.0.0
@@ -79,21 +59,6 @@ recorder:
       - updater
       - weblink
       - zwave
-
-input_boolean:
-  christmas_lights_up:
-    name: Christmas Lights Up
-    icon: mdi:robot
-  christmas_tree_up:
-    name: Christmas Tree Up
-    icon: mdi:robot
-  halloween_lights_up:
-    name: Halloween Lights Up
-    icon: mdi:robot
-  automatic_art_room_closet_lights:
-    name: Automatic Art Room Closet Lighting
-    initial: on
-    icon: mdi:robot
 
 tts:
   - platform: google_translate

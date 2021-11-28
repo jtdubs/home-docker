@@ -1,258 +1,116 @@
-- id: '0'
-  alias: Christmas Tree On (Morning)
-  initial_state: 'on'
-  trigger:
-    platform: time
-    at: 06:30:00
-  condition:
-  - condition: state
-    entity_id: input_boolean.christmas_tree_up
-    state: 'on'
-  - condition: template
-    value_template: '{{ now().month == 12 and now().day >= 1 and now().day <= 25 }}'
-  action:
-    service: homeassistant.turn_on
-    data:
-      entity_id: switch.christmas_tree_outlet
-- id: '1'
-  alias: Christmas Tree Off (Morning)
-  initial_state: 'on'
-  trigger:
-    platform: time
-    at: '10:00:00'
-  condition:
-  - condition: state
-    entity_id: input_boolean.christmas_tree_up
-    state: 'on'
-  - condition: template
-    value_template: '{{ now().month == 12 and now().day >= 1 and now().day <= 25 }}'
-  action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch..christmas_tree_outlet
-- id: '2'
-  alias: Christmas Tree On (Evening)
-  initial_state: 'on'
-  trigger:
-    platform: time
-    at: '17:00:00'
-  condition:
-  - condition: state
-    entity_id: input_boolean.christmas_tree_up
-    state: 'on'
-  - condition: template
-    value_template: '{{ now().month == 12 and now().day >= 1 and now().day <= 25 }}'
-  action:
-    service: homeassistant.turn_on
-    data:
-      entity_id: switch.christmas_tree_outlet
-- id: '3'
-  alias: Christmas Tree Off (Evening)
-  initial_state: 'on'
-  trigger:
-    platform: time
-    at: '23:00:00'
-  condition:
-  - condition: state
-    entity_id: input_boolean.christmas_tree_up
-    state: 'on'
-  - condition: template
-    value_template: '{{ now().month == 12 and now().day >= 1 and now().day <= 25 }}'
-  action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.christmas_tree_outlet
-- id: '4'
-  alias: Christmas Lights On
-  initial_state: 'on'
-  trigger:
-    platform: sun
-    event: sunset
-    offset: -00:30:00
-  condition:
-  - condition: state
-    entity_id: input_boolean.christmas_lights_up
-    state: 'on'
-  - condition: template
-    value_template: '{{ now().month == 12 }}'
-  action:
-    service: homeassistant.turn_on
-    data:
-      entity_id: switch.christmas_lights
-- id: '5'
-  alias: Christmas Lights Off
-  initial_state: 'on'
-  trigger:
-    platform: sun
-    event: sunrise
-    offset: -00:20:00
-  condition:
-  - condition: state
-    entity_id: input_boolean.christmas_lights_up
-    state: 'on'
-  - condition: template
-    value_template: '{{ now().month == 12 }}'
-  action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.christmas_lights
 - id: '6'
   alias: Garage Light Timeout
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: switch.garage_light
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_17
     from: 'off'
     to: 'on'
     for:
       minutes: 10
   action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.garage_light
-- id: '7'
-  alias: Guest Bathroom Fan Timeout
+  - service: homeassistant.turn_off
+    data: {}
+    target:
+      device_id: 9213e3479deec8523d457b0c816cadf3
   initial_state: 'on'
+- id: '7'
+  alias: Downstairs Bathroom Fan Timeout
   trigger:
   - platform: state
-    entity_id: switch.guest_bathroom_light
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_15
     from: 'on'
     to: 'off'
     for:
       minutes: 10
   condition:
-    condition: state
-    entity_id: switch.guest_bathroom_fan
-    state: 'on'
-  action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.guest_bathroom_fan
-- id: '8'
-  alias: Halloween Lights On
-  initial_state: 'on'
-  trigger:
-  - platform: sun
-    event: sunset
-  condition:
   - condition: state
-    entity_id: input_boolean.halloween_lights_up
+    entity_id: switch.in_wall_paddle_switch_12
     state: 'on'
   action:
-  - service: homeassistant.turn_on
-    data:
-      entity_id: switch.christmas_lights
-  - service: homeassistant.turn_on
-    data:
-      entity_id: switch.garage_exterior_large_light
-  - service: homeassistant.turn_on
-    data:
-      entity_id: switch.garage_exterior_small_light
-- id: '9'
-  alias: Halloween Lights Off
-  initial_state: 'on'
-  trigger:
-  - platform: time
-    at: '23:00:00'
-  condition:
-  - condition: state
-    entity_id: input_boolean.halloween_lights_up
-    state: 'on'
-  action:
-  - service: homeassistant.turn_on
-    data:
-      entity_id: switch.front_porch_light
   - service: homeassistant.turn_off
-    data:
-      entity_id: switch.christmas_lights
-  - service: homeassistant.turn_on
-    data:
-      entity_id: switch.driveway_flood_light
+    data: {}
+    target:
+      device_id: 2e4c762e8e0f3fd4c3c319ba178acffc
+  initial_state: 'on'
 - id: '10'
   alias: Kitchen Light Refresh
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: switch.kitchen_overhead_light
-  - platform: state
-    entity_id: switch.kitchen_sink_light
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_13
   action:
-  - delay: 00:00:02
-  - service: zwave.refresh_entity
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 4
+      milliseconds: 0
+  - service: zwave_js.refresh_value
     data:
-      entity_id: switch.kitchen_overhead_light
-  - service: zwave.refresh_entity
-    data:
-      entity_id: switch.kitchen_sink_light
+      entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_12
+  initial_state: 'on'
 - id: '11'
   alias: Master Bathroom Fan Timeout
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: light.master_bathroom_recessed
+    entity_id: light.in_wall_dimmer_switch_3
     from: 'on'
     to: 'off'
     for:
       minutes: 10
   - platform: state
-    entity_id: light.master_bathroom_vanity
+    entity_id: light.in_wall_dimmer_switch_2
     from: 'on'
     to: 'off'
     for:
       minutes: 10
   condition:
   - condition: state
-    entity_id: light.master_bathroom_recessed
+    entity_id: light.in_wall_dimmer_switch_2
     state: 'off'
   - condition: state
-    entity_id: light.master_bathroom_vanity
+    entity_id: light.in_wall_dimmer_switch_3
     state: 'off'
   - condition: state
-    entity_id: switch.master_bathroom_fan
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_2
     state: 'on'
   action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.master_bathroom_fan
+  - service: homeassistant.turn_off
+    data: {}
+    target:
+      device_id: ca2c4f25dc4086f949de84721e360111
+  initial_state: 'on'
 - id: '12'
   alias: Master Water Closet Fan Timeout
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: light.master_water_closet
+    entity_id: light.in_wall_dimmer_switch_5
     from: 'on'
     to: 'off'
     for:
       minutes: 10
   condition:
   - condition: state
-    entity_id: switch.master_water_closet_fan
+    entity_id: switch.in_wall_paddle_switch_3
     state: 'on'
   action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.master_water_closet_fan
+  - service: homeassistant.turn_off
+    data: {}
+    target:
+      device_id: d20e6e73656af951d927c688ea8911a0
+  initial_state: 'on'
 - id: '13'
   alias: Master Bathroom Light Refresh
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: light.master_bathroom_recessed
-  - platform: state
-    entity_id: light.master_bathroom_vanity
-  - platform: state
-    entity_id: light.master_bathroom_decorative
+    entity_id: light.in_wall_dimmer_switch_3
   action:
   - delay: 00:00:02
-  - service: zwave.refresh_entity
+  - service: zwave_js.refresh_value
     data:
-      entity_id: light.master_bathroom_recessed
-  - service: zwave.refresh_entity
+      entity_id: light.in_wall_dimmer_switch_2
+  - service: zwave_js.refresh_value
     data:
-      entity_id: light.master_bathroom_vanity
-  - service: zwave.refresh_entity
-    data:
-      entity_id: light.master_bathroom_decorative
+      entity_id: light.in_wall_dimmer_switch_4
+  initial_state: 'on'
 - id: '14'
   alias: Art Room Closet Door Open
   initial_state: 'on'
@@ -310,20 +168,15 @@
   trigger:
   - event: sunset
     platform: sun
-  condition:
-  - condition: state
-    entity_id: input_boolean.halloween_lights_up
-    state: 'off'
+  condition: []
   action:
-  - data:
-      entity_id: switch.front_porch_light
+  - data: {}
     service: homeassistant.turn_on
-  - data:
-      entity_id: switch.garage_exterior_small_light
-    service: homeassistant.turn_on
-  - data:
-      entity_id: switch.garage_exterior_large_light
-    service: homeassistant.turn_on
+    target:
+      device_id:
+      - c0657c4e8af9cbf8773345ada686f615
+      - e413c70e8c09002f20cb8bb6476ade66
+      - 334df6d5c4cf28068a53195474fe9037
   initial_state: 'on'
 - id: '17'
   alias: Outdoor Lights Off
@@ -332,65 +185,49 @@
     offset: -00:20:00
     platform: sun
   action:
-  - data:
-      entity_id: switch.front_porch_light
+  - data: {}
     service: homeassistant.turn_off
-  - data:
-      entity_id: switch.garage_exterior_small_light
-    service: homeassistant.turn_off
-  - data:
-      entity_id: switch.garage_exterior_large_light
-    service: homeassistant.turn_off
+    target:
+      device_id:
+      - c0657c4e8af9cbf8773345ada686f615
+      - 334df6d5c4cf28068a53195474fe9037
+      - e413c70e8c09002f20cb8bb6476ade66
   initial_state: 'on'
-- id: '18'
-  alias: Garage Exterior Light Refresh
-  initial_state: 'on'
-  trigger:
-  - platform: state
-    entity_id: switch.garage_exterior_large_light
-  - platform: state
-    entity_id: switch.garage_exterior_small_light
-  action:
-  - delay: 00:00:02
-  - service: zwave.refresh_entity
-    data:
-      entity_id: switch.garage_exterior_large_light
-  - service: zwave.refresh_entity
-    data:
-      entity_id: switch.garage_exterior_small_light
 - id: '19'
   alias: Upstairs Bathroom Fan Timeout
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: switch.upstairs_bathroom_light
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_3
     from: 'on'
     to: 'off'
     for:
       minutes: 10
   condition:
   - condition: state
-    entity_id: switch.upstairs_bathroom_fan
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_4
     state: 'on'
   action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.upstairs_bathroom_fan
+  - service: homeassistant.turn_off
+    data: {}
+    target:
+      device_id: 00d8aef3ffa9d0c86cd6d895600efb93
+  initial_state: 'on'
 - id: '20'
   alias: Upstairs Water Closet Fan Timeout
-  initial_state: 'on'
   trigger:
   - platform: state
-    entity_id: switch.upstairs_water_closet_light
+    entity_id: switch.upstairs_water_closet_light_switch
     from: 'on'
     to: 'off'
     for:
       minutes: 10
   condition:
   - condition: state
-    entity_id: switch.upstairs_water_closet_fan
+    entity_id: switch.ge_quick_fit_smart_in_wall_paddle_switch_6
     state: 'on'
   action:
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.upstairs_water_closet_fan
+  - service: homeassistant.turn_off
+    data: {}
+    target:
+      device_id: 121f40b353820e0b9e5a4394b009baad
+  initial_state: 'on'
