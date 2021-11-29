@@ -44,7 +44,7 @@
         },
         "5": {
             "id": 5,
-            "interviewStage": "Complete",
+            "interviewStage": "NodeInfo",
             "deviceClass": {
                 "basic": 4,
                 "generic": 17,

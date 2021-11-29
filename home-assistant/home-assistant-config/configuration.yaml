@@ -7,6 +7,7 @@ history:
 sun:
 system_health:
 mobile_app:
+scene:
 
 automation: !include automations.yaml
 
@@ -18,7 +19,6 @@ frontend:
 http:
   server_host: 0.0.0.0
   server_port: 8123
-  base_url: http://homeassistant.services.dubs.zone/
   use_x_forwarded_for: true
   trusted_proxies:
     - 172.30.0.2
@@ -43,13 +43,7 @@ logger:
     homeassistant.components.automation: debug
     homeassistant.components.cover: debug
 
-notify:
-  - platform: html5
-    gcm_api_key: 'AAAA4BsGrqk:APA91bEU5E0ccA25FHSpydftcsMYqx4OetAmzw9OOpGyC0aqFxG6AhSLOYygKgu0iRVQaCCaoXQLSX-CpwUfkPt9M7PWHDoS4E6k3ZDuzqxWOPejt7X5_SuAsXZsrcVqWXZI9d4q7G07'
-    gcm_sender_id: '962526097065'
-
 recorder:
-  purge_interval: 1
   purge_keep_days: 30
   exclude:
     domains:
@@ -65,4 +59,3 @@ tts:
     service_name: google_say
 
 updater:
-  include_used_components: true

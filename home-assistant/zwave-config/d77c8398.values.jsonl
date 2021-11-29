@@ -3,50 +3,6 @@
 {"k":"{\"nodeId\":1,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":90}
 {"k":"{\"nodeId\":1,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["1.0"]}
 {"k":"uuid","v":"ebf8b821166ab30f571f00c76c7c2f0b521ebdd826b7f9e33cc32fc655bdce1a"}
-{"k":"{\"nodeId\":5,\"commandClass\":-1,\"endpoint\":0,\"property\":\"hasSUCReturnRoute\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":99}
-{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":18756}
-{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":12593}
-{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"libraryType\"}","v":3}
-{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"protocolVersion\"}","v":"4.5"}
-{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["5.20"]}
-{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"hardwareVersion\"}","v":255}
-{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"zwavePlusVersion\"}","v":1}
-{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"nodeType\"}","v":0}
-{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"roleType\"}","v":5}
-{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"installerIcon\"}","v":1024}
-{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"userIcon\"}","v":1024}
-{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"groupCount\"}","v":3}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":1}","v":5}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":1}","v":[1]}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":2}","v":5}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":2}","v":[]}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":3}","v":5}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":3}","v":[1]}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline"}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"38":[3],"90":[1],"$$type$$":"map"}}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":2}","v":"Fan control(Key1)"}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":2}","v":{"38":[1],"$$type$$":"map"}}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":3}","v":"Fan control(Key2)"}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":3}","v":{"38":[1],"$$type$$":"map"}}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"hasDynamicInfo\"}","v":false}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":1}","v":{"mode":0,"profile":1,"eventCode":0}}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":2}","v":{"mode":0,"profile":8193,"eventCode":0}}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
-{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":98}
-{"k":"{\"nodeId\":5,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0}
-{"k":"{\"nodeId\":5,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":112,\"endpoint\":0,\"property\":\"isParamInformationFromConfig\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":112,\"endpoint\":0,\"property\":4}","v":0}
-{"k":"{\"nodeId\":5,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":44,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":6,\"commandClass\":-1,\"endpoint\":0,\"property\":\"hasSUCReturnRoute\"}","v":true}
 {"k":"{\"nodeId\":6,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":99}
 {"k":"{\"nodeId\":6,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":18770}
@@ -95,7 +51,7 @@
 {"k":"{\"nodeId\":6,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":6,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":99}
 {"k":"{\"nodeId\":6,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":6,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":6,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":6,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
 {"k":"{\"nodeId\":6,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":6,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
@@ -108,8 +64,6 @@
 {"k":"{\"nodeId\":6,\"commandClass\":112,\"endpoint\":0,\"property\":19}","v":0}
 {"k":"{\"nodeId\":6,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":6,\"commandClass\":44,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":5,\"commandClass\":119,\"endpoint\":0,\"property\":\"name\"}","v":"Office Fan Switch"}
-{"k":"{\"nodeId\":5,\"commandClass\":119,\"endpoint\":0,\"property\":\"location\"}","v":"Office"}
 {"k":"{\"nodeId\":6,\"commandClass\":119,\"endpoint\":0,\"property\":\"name\"}","v":"Office Light Switch"}
 {"k":"{\"nodeId\":6,\"commandClass\":119,\"endpoint\":0,\"property\":\"location\"}","v":"Office"}
 {"k":"{\"nodeId\":7,\"commandClass\":-1,\"endpoint\":0,\"property\":\"hasSUCReturnRoute\"}","v":true}
@@ -150,7 +104,7 @@
 {"k":"{\"nodeId\":7,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":7,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":99}
 {"k":"{\"nodeId\":7,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":0}
+{"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":99}
 {"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":7,\"commandClass\":112,\"endpoint\":0,\"property\":\"isParamInformationFromConfig\"}","v":true}
 {"k":"{\"nodeId\":7,\"commandClass\":112,\"endpoint\":0,\"property\":3}","v":0}
@@ -706,7 +660,7 @@
 {"k":"{\"nodeId\":18,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
 {"k":"{\"nodeId\":18,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":18,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":18,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":18,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":18,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
 {"k":"{\"nodeId\":18,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":18,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
@@ -857,7 +811,7 @@
 {"k":"{\"nodeId\":20,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
 {"k":"{\"nodeId\":20,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":20,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":20,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":20,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":20,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
 {"k":"{\"nodeId\":20,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":20,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
@@ -919,7 +873,7 @@
 {"k":"{\"nodeId\":21,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":2}","v":{"mode":0,"profile":8193,"eventCode":0}}
 {"k":"{\"nodeId\":21,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
 {"k":"{\"nodeId\":21,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":21,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":21,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":21,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
 {"k":"{\"nodeId\":21,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":21,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
@@ -1255,8 +1209,8 @@
 {"k":"{\"nodeId\":28,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":28,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":0}
 {"k":"{\"nodeId\":28,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":28,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
-{"k":"{\"nodeId\":28,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
+{"k":"{\"nodeId\":28,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":28,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
 {"k":"{\"nodeId\":28,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":28,\"commandClass\":112,\"endpoint\":0,\"property\":\"isParamInformationFromConfig\"}","v":true}
 {"k":"{\"nodeId\":28,\"commandClass\":112,\"endpoint\":0,\"property\":3}","v":0}
@@ -1366,7 +1320,7 @@
 {"k":"{\"nodeId\":30,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":30,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":0}
 {"k":"{\"nodeId\":30,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":30,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":30,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":30,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":30,\"commandClass\":112,\"endpoint\":0,\"property\":\"isParamInformationFromConfig\"}","v":true}
 {"k":"{\"nodeId\":30,\"commandClass\":112,\"endpoint\":0,\"property\":3}","v":0}
@@ -1626,7 +1580,7 @@
 {"k":"{\"nodeId\":35,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
 {"k":"{\"nodeId\":35,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":35,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":35,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":35,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":35,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
 {"k":"{\"nodeId\":35,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":35,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
@@ -1689,7 +1643,7 @@
 {"k":"{\"nodeId\":36,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":36,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":99}
 {"k":"{\"nodeId\":36,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":36,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":36,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":36,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
 {"k":"{\"nodeId\":36,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":36,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
@@ -1879,7 +1833,7 @@
 {"k":"{\"nodeId\":39,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":39,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":39,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
-{"k":"{\"nodeId\":39,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
+{"k":"{\"nodeId\":39,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
 {"k":"{\"nodeId\":39,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":39,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":39,\"commandClass\":91,\"endpoint\":0,\"property\":\"sceneCount\"}","v":2}
@@ -2048,8 +2002,8 @@
 {"k":"{\"nodeId\":42,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
 {"k":"{\"nodeId\":42,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":42,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":42,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
-{"k":"{\"nodeId\":42,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
+{"k":"{\"nodeId\":42,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":42,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
 {"k":"{\"nodeId\":42,\"commandClass\":37,\"endpoint\":0,\"property\":\"duration\"}","v":{"value":0,"unit":"seconds","$$type$$":"duration"}}
 {"k":"{\"nodeId\":42,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":42,\"commandClass\":91,\"endpoint\":0,\"property\":\"sceneCount\"}","v":2}
@@ -2284,7 +2238,7 @@
 {"k":"{\"nodeId\":46,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
 {"k":"{\"nodeId\":46,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":46,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
-{"k":"{\"nodeId\":46,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":46,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":46,\"commandClass\":37,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":46,\"commandClass\":91,\"endpoint\":0,\"property\":\"sceneCount\"}","v":2}
 {"k":"{\"nodeId\":46,\"commandClass\":91,\"endpoint\":0,\"property\":\"supportsSlowRefresh\"}","v":true}
@@ -2367,7 +2321,7 @@
 {"k":"{\"nodeId\":48,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true}
 {"k":"{\"nodeId\":48,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":48,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline"}
-{"k":"{\"nodeId\":48,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":48,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":true}
 {"k":"{\"nodeId\":48,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":2}","v":"On/Off control"}
 {"k":"{\"nodeId\":48,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":2}","v":{"32":[1],"$$type$$":"map"}}
 {"k":"{\"nodeId\":48,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":3}","v":"On/Off control"}
@@ -2638,7 +2592,6 @@
 {"k":"{\"nodeId\":53,\"commandClass\":44,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
 {"k":"{\"nodeId\":53,\"commandClass\":119,\"endpoint\":0,\"property\":\"name\"}","v":"Crawlspace Light Switch"}
 {"k":"{\"nodeId\":53,\"commandClass\":119,\"endpoint\":0,\"property\":\"location\"}","v":"Crawlspace"}
-{"k":"{\"nodeId\":5,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}"}
 {"k":"{\"nodeId\":49,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
 {"k":"{\"nodeId\":13,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
 {"k":"{\"nodeId\":12,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}"}
@@ -2647,9 +2600,9 @@
 {"k":"{\"nodeId\":7,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":0}
 {"k":"{\"nodeId\":24,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}"}
 {"k":"{\"nodeId\":43,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
-{"k":"{\"nodeId\":30,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
-{"k":"{\"nodeId\":46,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
-{"k":"{\"nodeId\":48,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":false}
+{"k":"{\"nodeId\":30,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
+{"k":"{\"nodeId\":46,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
+{"k":"{\"nodeId\":48,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}","v":true}
 {"k":"{\"nodeId\":51,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}"}
 {"k":"{\"nodeId\":32,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":255}
 {"k":"{\"nodeId\":31,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}"}
@@ -2659,3 +2612,51 @@
 {"k":"{\"nodeId\":26,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}"}
 {"k":"{\"nodeId\":52,\"commandClass\":37,\"endpoint\":0,\"property\":\"targetValue\"}"}
 {"k":"{\"nodeId\":34,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}"}
+{"k":"{\"nodeId\":5,\"commandClass\":119,\"endpoint\":0,\"property\":\"name\"}","v":"Office Fan Switch"}
+{"k":"{\"nodeId\":5,\"commandClass\":119,\"endpoint\":0,\"property\":\"location\"}","v":"Office"}
+{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"manufacturerId\"}","v":99}
+{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"productType\"}","v":18756}
+{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"productId\"}","v":12593}
+{"k":"{\"nodeId\":5,\"commandClass\":114,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"libraryType\"}","v":3}
+{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"protocolVersion\"}","v":"4.5"}
+{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"firmwareVersions\"}","v":["5.20"]}
+{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"hardwareVersion\"}","v":255}
+{"k":"{\"nodeId\":5,\"commandClass\":134,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"zwavePlusVersion\"}","v":1}
+{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"nodeType\"}","v":0}
+{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"roleType\"}","v":5}
+{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"installerIcon\"}","v":1024}
+{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"userIcon\"}","v":1024}
+{"k":"{\"nodeId\":5,\"commandClass\":94,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"groupCount\"}","v":3}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":1}","v":5}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":1}","v":[1]}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":2}","v":5}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":2}","v":[]}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"maxNodes\",\"propertyKey\":3}","v":5}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"nodeIds\",\"propertyKey\":3}","v":[1]}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"hasLifeline\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":133,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":1}","v":"Lifeline"}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":1}","v":{"38":[3],"90":[1],"$$type$$":"map"}}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":2}","v":"Fan control(Key1)"}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":2}","v":{"38":[1],"$$type$$":"map"}}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"name\",\"propertyKey\":3}","v":"Fan control(Key2)"}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"issuedCommands\",\"propertyKey\":3}","v":{"38":[1],"$$type$$":"map"}}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"hasDynamicInfo\"}","v":false}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":1}","v":{"mode":0,"profile":1,"eventCode":0}}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":2}","v":{"mode":0,"profile":8193,"eventCode":0}}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"info\",\"propertyKey\":3}","v":{"mode":0,"profile":8194,"eventCode":0}}
+{"k":"{\"nodeId\":5,\"commandClass\":89,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":32,\"endpoint\":0,\"property\":\"currentValue\"}","v":0}
+{"k":"{\"nodeId\":5,\"commandClass\":32,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":38,\"endpoint\":0,\"property\":\"targetValue\"}","v":25}
+{"k":"{\"nodeId\":5,\"commandClass\":38,\"endpoint\":0,\"property\":\"currentValue\"}","v":25}
+{"k":"{\"nodeId\":5,\"commandClass\":38,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":112,\"endpoint\":0,\"property\":\"isParamInformationFromConfig\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":112,\"endpoint\":0,\"property\":4}","v":0}
+{"k":"{\"nodeId\":5,\"commandClass\":112,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":5,\"commandClass\":44,\"endpoint\":0,\"property\":\"interviewComplete\"}","v":true}
+{"k":"{\"nodeId\":20,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
+{"k":"{\"nodeId\":18,\"commandClass\":37,\"endpoint\":0,\"property\":\"currentValue\"}","v":false}
